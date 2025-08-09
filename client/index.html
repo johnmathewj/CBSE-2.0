@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnTree</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="modern-header">
+        <div class="container">
+            <h1 class="logo">LearnTree</h1>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero-section glass">
+            <div class="hero-content">
+                <h2 class="hero-title">Learning at the Speed of Thought</h2>
+                <p class="hero-desc">
+                      LearnTree is your intelligent, lightning-fast study companion. Solve tough homework, summarize notes, or quiz yourself — all in a snap.
+                </p>
+                <button onclick="Options()" class="modern-btn">Get Started</button>
+            </div>
+            <img src="images/features.png" alt="LearnTree Features" class="hero-img">
+        </section>
+        <section id="features" class="features-section">
+            <h1 class="section-title">Features</h1>
+            <div class="features-grid">
+                <div class="feature-card glass">
+                    <div class="feature-icon">📘</div>
+                    <h3>Instant Answer Engine</h3>
+                    <p>Fast, accurate answers to academic questions across subjects — powered by advanced AI models.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Smart Summarizer</h3>
+                    <p>Transform textbooks, PDFs, or notes into clear, concise summaries to save time and boost retention.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized Quiz Generator</h3>
+                    <p>Create practice tests tailored to your syllabus, learning speed, and weak areas — all in seconds.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">📅</div>
+                    <h3>AI Study Planner</h3>
+                      <p>LearnTree schedules your study time intelligently, balancing subjects, assignments, and breaks for optimal focus.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Homework Helper</h3>
+                      <p>Upload homework questions, and LearnTree explains solutions step by step — not just the answer, but how to think.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section glass">
+            <h1 class="section-title">Contact Us</h1>
+            <form class="modern-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your feedback, question, or complaint..." required></textarea>
+                </div>
+                <button class="modern-btn" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="modern-footer">
+        <div class="container">&copy; LearnTree Inc.</div>
+    </footer>
+    <script>
+        function Options() {
+            window.location.href = "pages/options.html";
+        }
+        // Optional: Add smooth scroll for nav links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
