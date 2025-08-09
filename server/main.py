@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from google import genai
 
-client = genai.Client(api_key="AIzaSyBc70X28NtqrbzEpkz6uKcbLfXgDZ1Sixs")
+client = genai.Client(api_key="YOUR API KEY")
 
 
 def generate_explanation(name, class_, topic, board):
@@ -33,4 +33,5 @@ def generate():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
